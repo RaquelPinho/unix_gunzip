@@ -1,0 +1,29 @@
+#first I created a directory where I downloaded the data into.
+mkdir Data_RNAseq
+#to remove a directory with is contents you can use rm -i -r directory
+#second I created one directory for each lane in the illumina sequencing inside the Data_RNAseq directory
+mkdir -p Data_RNAseq/RP{1..10}_demultiplexed #my data was already demultiplexed
+#you can also go to the Data_RNAseq directory and create the directories there ( cd Data_RNAseq ; mkdir RP{1..10}_demultiplexed)
+#third you can download the data from the website using wget command
+wget -o Data_RNAseq/RP1_demultiplex/index1L1.fastq.gz http/link_to_data_lane_1_index1 
+#you can also go to the directory of that lane and just use wget http/link_to_data_lane_1_index1 and rename the files afterwards
+#to rename the fales afterward, in their directory type: rename 's/_S*.*/L1/' *  (for lane 1) the names were like this: 
+#index2_S100_L006_R1_001.txt
+#to do multiple downloads at the same time you can create multiple screens and download different files in each screen
+#to create and name a new screen 
+screen -S <name>
+#to check if you are in the screen
+echo $STY 
+#to see the list of the screens
+screen -list
+#or
+screen -ls
+#to detach the screen without closing it 
+screen -d <name>
+#to go back to a detached screen
+screen -r <name>
+#to exit a screen for god, when you are inside the screen  (sometimes you have to type more than one)
+exit
+#to kill a screen 
+screen -X -S [session # you want to kill] kill
+
