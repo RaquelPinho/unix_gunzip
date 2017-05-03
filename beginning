@@ -29,4 +29,7 @@ gunzip -c path/RP1_demultiplexed/${fname}_R1_001.fastq.gz > path/Unziped_files/R
 #Now that you have the gunziped files you can concatenate them using the cat command:
 cat index1L1.fastq index2L1.fastq ...> lane1.fastq
 
+#it is also important to note that if you writing the code and importing to the server strait from the notepad++,
+3you need to convert the windows language to the unix language unsing the command: dos2unix <importedfile> 
+
 
