@@ -16,6 +16,6 @@
 #how much time do you think it is going to take to run.
 
 #Then you can do as many wget as you want.
-wget -o ~/RP1/barcode.html http:/link/laneBarcode.html
+wget -O ~/RP1/barcode.html http:/link/laneBarcode.html
 #I guess you can try to do a loop but I haven't done that.
 
