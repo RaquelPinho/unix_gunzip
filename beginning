@@ -6,7 +6,7 @@ mkdir -p Data_RNAseq/RP{1..10}_demultiplexed #my data was already demultiplexed 
 #you can also go to the Data_RNAseq directory and create the directories there ( cd Data_RNAseq ; mkdir RP{1..10}_demultiplexed)
 
 #third you can download the data from the website using wget command
-wget -o Data_RNAseq/RP1_demultiplex/index1L1.fastq.gz http/link_to_data_lane_1_index1 
+wget -O Data_RNAseq/RP1_demultiplex/index1L1.fastq.gz http/link_to_data_lane_1_index1 
 #you can also go to the directory of that lane and just use wget http/link_to_data_lane_1_index1 and rename the files afterwards
 #to rename the files afterward, in their directory type: rename 's/_S*.*/L1/' *  (for lane 1) the names were like this: 
 #index2_S100_L006_R1_001.txt
